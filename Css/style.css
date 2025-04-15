@@ -270,3 +270,46 @@ h1 {
       padding: 20px;
       overflow: auto;
     }
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .encabezado,
+  nav,
+  .Noticias,
+  .footer,
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .b, .x, .Pe {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .noticias-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .noticia {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .e {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .m {
+    margin-left: 0;
+  }
+}
