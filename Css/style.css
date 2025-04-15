@@ -15,7 +15,8 @@
 	padding: 20px;
 	font-size: 35px;
 	text-align: center;
-	margin: 0 auto;
+	width: 88%;
+	margin-left: 250px;
 	justify-content: center;
 }
 .r {
@@ -45,8 +46,8 @@
 	display: flex;
 	align-items: center;
 	background-color: #262547;
-	flex-direction: center;
-	padding: 10px;
+	margin-left: 400px;
+	font-size: 23px;
 }
 .x {
 		margin-left: 450px;
@@ -245,14 +246,6 @@ h1 {
         	.encabezado {
         		flex-direction: column;
         		text-align: center;
-        		align-items: center;
-        	}
-        	.Pe {
-        		margin-left: 0;
-        	}
-        	.b, .x {
-        		margin-left: 0;
-        		width: 100%;
         	}
         	#reloj {
         		margin-top: 10px;
@@ -277,10 +270,3 @@ h1 {
       padding: 20px;
       overflow: auto;
     }
-body, .encabezado, .Pe, .footer, main, nav, .Noticias {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    padding: 0 16px;
-}
