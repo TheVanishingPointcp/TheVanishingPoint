@@ -37,6 +37,8 @@
 	display: flex;
 	background-color: #262547;
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 16px;
 }
 .Pe {
 	display: flex;
@@ -238,7 +240,14 @@ h1 {
         }
 
         /* Responsividad para pantallas más pequeñas */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
+        	.header {
+        		flex-direction: column;
+        		text-align: center;
+        	}
+        	#reloj {
+        		margin-top: 10px;
+        	}
             .noticia {
                 width: 45%; /* En pantallas medianas, las noticias ocuparán el 45% */
             }
