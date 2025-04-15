@@ -15,8 +15,7 @@
 	padding: 20px;
 	font-size: 35px;
 	text-align: center;
-	width: 88%;
-	margin-left: 250px;
+	margin: 0 auto;
 	justify-content: center;
 }
 .r {
@@ -46,8 +45,8 @@
 	display: flex;
 	align-items: center;
 	background-color: #262547;
-	margin-left: 400px;
-	font-size: 23px;
+	flex-direction: center;
+	padding: 10px;
 }
 .x {
 		margin-left: 450px;
@@ -243,9 +242,17 @@ h1 {
 
         /* Responsividad para pantallas más pequeñas */
         @media (max-width: 600px) {
-        	.header {
+        	.encabezado {
         		flex-direction: column;
         		text-align: center;
+        		align-items: center;
+        	}
+        	.Pe {
+        		margin-left: 0;
+        	}
+        	.b, .x {
+        		margin-left: 0;
+        		width: 100%;
         	}
         	#reloj {
         		margin-top: 10px;
@@ -270,3 +277,10 @@ h1 {
       padding: 20px;
       overflow: auto;
     }
+body, .encabezado, .Pe, .footer, main, nav, .Noticias {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 16px;
+}
