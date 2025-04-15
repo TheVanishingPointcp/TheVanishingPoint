@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactos</title>
+	<link rel="stylesheet" type="text/css" href="css/style c.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<meta charset="UTF-8">
+</head>
+<body class="a">
+	<div class="encabezado">
+		<img class="enc" src="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Imagenes/Imagen1.png">
+		<h1 class="b">Contactos</h1>
+<div class="Pe">
+			<main>
+        		<div id="clock"></div>
+       			<div id="date">date</div>
+    		</main>
+		</div>
+		<script src="clock.js"></script>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo/Chester's Echo.html">Inicio</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\H/Hábitos saludables.html">Hábitos saludables</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\F/Financiera.html">Financiera</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\E/Emociones.html">Emociones</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Am/Ambiente.html">Ambiente</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\A/Actualidad.html">Actualidad</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo/Contactos.html">Contactos</a></li>
+		</ul>
+	</nav>
+
+	<div class="g">
+		<div class="c">
+			<a href="https://www.instagram.com/chesterpalmerschool/"><i class="bi bi-instagram"></i></a>
+			<a href="https://www.facebook.com/chesterpalmerschool/"><i class="bi bi-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UCCz3GID9HGs8HS_UtxDJxdg?view_as=subscriber"><i class="bi bi-youtube"></i></a>
+			<a href="https://api.whatsapp.com/send/?phone=573174003788&text=Hola%2C+escribo+desde+la+p%C3%A1gina+y+tengo+una+pregunta&type=phone_number&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+		</div>
+		<div></div>
+	</div>
+
+	<footer class="footer">
+		<div class="e">
+			<div class="f">
+				<figure>
+					<a href="#">
+						<img class="m" src="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Imagenes/Imagen2.png">
+					</a>
+				</figure>
+			</div>
+			<div class="h">
+				<h2>SOBRE NOSOTROS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+			<div class="q">
+				<h2>SIGUENOS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+
+			</div>
+		</div>
+
+	</footer>
+
+ <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+
+               document.getElementById("clock").textContent = timeString;
+
+
+            const day = now.getDate();
+            const month = now.getMonth() + 1;
+            const year = now.getFullYear();
+            const dateString = `${day}/${month}/${year}`;
+
+            document.getElementById("date").textContent = dateString;
+        }
+
+
+        setInterval(updateTime, 1000);
+
+
+        updateTime();
+    </script>
+    <script>
+        function redirigir(url) {
+            window.location.href = url;
+        }
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Financiera</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\F/style F.css">
+</head>
+<body class="a">
+	<div class="encabezado">
+		<img class="enc" src="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Imagenes/Imagen1.png">
+		<h1 class="b">Financiera</h1>
+		<div class="Pe">
+			<main>
+        		<div id="clock"></div>
+       			<div id="date">date</div>
+    		</main>
+		</div>
+		<script src="clock.js"></script>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo/Chester's Echo.html">Inicio</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\H/Hábitos saludables.html">Hábitos saludables</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\F/Financiera.html">Financiera</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\E/Emociones.html">Emociones</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Am/Ambiente.html">Ambiente</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\A/Actualidad.html">Actualidad</a></li>
+			<li><a href="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo/Contactos.html">Contactos</a></li>
+		</ul>
+	</nav>
+	<h1>Últimas Noticias</h1>
+
+    <!-- Contenedor de noticias -->
+    <div class="noticias-container">
+        <!-- Apartado de noticia 1 -->
+        <div class="noticia" onclick="window.location.href='ESf 1.html'">
+            <h2>Título de la Noticia 1</h2>
+            <p>Resumen de la noticia 1...</p>
+        </div>
+
+        <!-- Apartado de noticia 2 -->
+        <div class="noticia" onclick="window.location.href='ESf 2.html'">
+            <h2>Título de la Noticia 2</h2>
+            <p>Resumen de la noticia 2...</p>
+        </div>
+
+        <!-- Apartado de noticia 3 -->
+        <div class="noticia" onclick="window.location.href='ESf 3.html'">
+            <h2>Título de la Noticia 3</h2>
+            <p>Resumen de la noticia 3...</p>
+        </div>
+
+        <div class="noticia" onclick="window.location.href='ESf 4.html'">
+            <h2>Título de la Noticia 4</h2>
+            <p>Resumen de la noticia 4...</p>
+        </div>
+
+        <!-- Apartado de noticia 2 -->
+        <div class="noticia" onclick="window.location.href='ESf 5.html'">
+            <h2>Título de la Noticia 5</h2>
+            <p>Resumen de la noticia 5...</p>
+        </div>
+
+        <!-- Apartado de noticia 3 -->
+        <div class="noticia" onclick="window.location.href='ESf 6.html'">
+            <h2>Título de la Noticia 6</h2>
+            <p>Resumen de la noticia 6...</p>
+        </div>
+    </div>
+	</div>
+
+	<footer class="footer">
+		<div class="e">
+			<div class="f">
+				<figure>
+					<a href="#">
+						<img class="m" src="C:\Users\Familia Arango\Documents\Carolina\Chester's Echo\Imagenes/Imagen2.png">
+					</a>
+				</figure>
+			</div>
+			<div class="h">
+				<h2>SOBRE NOSOTROS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+			<div class="q">
+				<h2>SIGUENOS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+
+			</div>
+		</div>
+
+	</footer>
+
+ <script>
+        function updateTime() {
+            const now = new Date();
+            const hours = now.getHours().toString().padStart(2, '0');
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const timeString = `${hours}:${minutes}:${seconds}`;
+
+               document.getElementById("clock").textContent = timeString;
+
+
+            const day = now.getDate();
+            const month = now.getMonth() + 1;
+            const year = now.getFullYear();
+            const dateString = `${day}/${month}/${year}`;
+
+            document.getElementById("date").textContent = dateString;
+        }
+
+
+        setInterval(updateTime, 1000);
+
+
+        updateTime();
+    </script>
+    <script>
+        function redirigir(url) {
+            window.location.href = url;
+        }
+	</script>
+
+
+</body>
+</html>
